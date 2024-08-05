@@ -1,0 +1,21 @@
+[#Menu: gateway of tally]
+	Add : Key Item : Before : @@locQuit : "Godowan Report" : T : Display Collection	: XXYZGodownSummary
+	
+
+	[Collection : XXYZGodownSummary]
+		Use			: List of Godowns
+		Variable	: DSP Godown Name
+		Report      : XXYZGodownSummary
+		Trigger     : Godown Name
+		Fetch       : Name
+;; Configuration for Godowan		
+	[Report : XXYZGodownSummary]
+		Use	: GodownSummary
+		Set	: DSPShowQty    	: yes
+		Set	: DSPShowRate   	: yes
+		Set	: DSPQtyAlternate	: Yes
+		Set	: DSPShowValue		: yes
+		Set	: DSPShowOpBal		: Yes
+		Set	: DSPShowClosing 	: Yes	
+		Set	: DSPShowInwards 	: Yes	
+		Set	: DSPShowOutwards	: Yes	
